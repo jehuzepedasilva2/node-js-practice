@@ -1,6 +1,10 @@
 const http = require('node:http');
 const fs = require('node:fs');
 const url = require('node:url');
+// must install dotenv
+// make an .env (add it to gitignore) and in the .env put the environment variables 
+// then use process.env.NAME of variable
+// require("dotenv").config(); // import like so
 
 const routes = {
   '/': './index.html',
