@@ -1,7 +1,7 @@
-const http = require('node:http');
-const fs = require('node:fs');
-const url = require('node:url');
-// must install dotenv
+const http = require('node:http'); // to create a server
+const fs = require('node:fs'); // to read and right pages (fs => file system)
+const url = require('node:url'); // to get urls
+// must install dotenv (npm install dotenv --save)
 // make an .env (add it to gitignore) and in the .env put the environment variables 
 // then use process.env.NAME of variable
 // require("dotenv").config(); // import like so
