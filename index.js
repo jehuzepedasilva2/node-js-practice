@@ -15,7 +15,6 @@ const routes = {
 const server = http.createServer((req, res) => {
   let path = url.parse(req.url).pathname;
   path = routes[path] || './404.html';
-  
   fs.readFile(path, (err, data) => {
     if (err) {
       res.writeHead(500, { 'Content-Type': 'text/html' });
